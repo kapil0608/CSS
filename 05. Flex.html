@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container-1{
+            width: 100%;
+            height: 100vh;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-direction:column-reverse;
+        }
+        .box{
+            width: 20%;
+            height: 100px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+        .box-1{
+            background-color: aqua;
+        }
+        .box-2{
+            background-color: rgb(179,173,230);
+        }
+        .box-3{
+            background-color: rgb(240,128,128);
+        }
+        .box-4{
+            background-color: rgb(103,115,117);
+        }
+        .container-2{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(orange,white,green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 180px;
+        }
+        .container-3{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction:row;
+        }
+        .box-left{
+            width: 50%;
+            height: 50vh;
+            background: greenyellow;
+
+        }
+        .box-right{
+            width: 50%;
+            height: 50vh;
+            background: red;
+        }
+        .container-4{
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+            background: radial-gradient(black,white),black,white,black,white,black,white,black,white,black,white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+    <div class="container-2">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/500px-Ashoka_Chakra.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="">
+    </div>
+    <div class="container-3">
+        <div class="box box-left"></div>
+        <div class="box box-right"></div>
+    </div>
+
+
+</body>
+</html>
