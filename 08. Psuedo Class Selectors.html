@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class-1:link{
+            font-size: 3rem;
+            color: limegreen;
+            border: 3px solid black;
+            text-decoration: none;
+        }
+        .class-1:visited{
+            color: yellow;
+        }
+        .class-1:active{
+            color: aqua;
+            background-color: black;
+        }
+        #id-1:link{
+            font-size: 2rem;
+            color:aquamarine
+        }
+        #id-1:active{
+            color: brown;
+            background-color: black;
+        }
+        #id-1:hover{
+            color: var();
+            background-color: black;
+        }
+        .wrap{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            background-color: aqua;
+        }
+        .wrap:hover{
+            border-radius: 50%;
+            background-color: antiquewhite;
+        }
+        input:focus{
+            width: 700px;
+            height: 50px;
+            border: 3px solid lightseagreen;
+            background-color: lightgoldenrodyellow;
+            color: white;
+            font-size: 2px;
+        }
+        .main h2:first-child{
+            text-align: left;
+            border: 4px solid lime;
+            color: red;
+            background-color: blanchedalmond;
+        }
+        .main h2:last-child{
+            text-align: right;
+            border: 3px solid salmon;
+            color: bisque;
+            background-color: black;
+        }
+        .main h2:nth-child(odd){
+            text-align: right;
+            border: 3px solid red;
+            color: greenyellow;
+            background-color: black;
+        }
+        .main h2:nth-child(even){
+            text-align: left;
+            border: 3px solid red;
+            color: greenyellow;
+            background-color: black;
+        }
+        .checked:checked{
+            accent-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ---------- Link ----------- -->
+     <hr>
+     <a href="" class="class-1">CLICK HERE</a>
+     <br><br>
+     <hr>
+     <a href="https://www.google.com" class="class-1"> CLICK HERE </a>
+     <br><br>
+     <hr>
+     <a href="" id="id-1">PLEASE CLICK HERE</a>
+     <br><br>
+     <hr>
+     <a href="https://www.google.com" class="class-1">PLEASE CLICK HERE </a>
+     <br><br>
+     <hr>
+     <!-- ------------ Hover -------------- -->
+      <div class="wrap"></div>
+      <br><br>
+      <hr>
+    <!-- ------------ Focus -------------- -->
+     <input type="text" name="" id="">
+     <br><br>
+     <hr>
+
+     <!-- ------------- first/last/nth child --------------- -->
+      <div class="main">
+        <h2>Kapil Sharma</h2>
+        <h2>Kapil Sharma</h2>
+        <h2>Kapil Sharma</h2>
+        <h2>Kapil Sharma</h2>
+        <h2>Kapil Sharma</h2>
+        <h2>Kapil Sharma</h2>
+      </div>
+      <br><br>
+      <hr>
+
+      <!-- --------------- Checked ----------------- -->
+       <input type="checkbox" name="" id="" class="checked">
+
+       <input type="radio" name="" id="" class="checked">
+
+
+
+</body>
+</html>
