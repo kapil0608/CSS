@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(45, 223, 223);
+        }
+        h1{
+            font-size: 2rem;
+            background-color: lightcyan;
+            text-align: center;
+        }
+        /* ------------- Descendent -------------- */
+        .pandavas h2{
+            font-size: 2.5rem;
+            text-align: center;
+            background-color:aquamarine;
+            padding: 20px;
+            border: 3px solid black;
+        }
+        /* ------------- Child Selector -------------- */
+        .pandu>h3{
+            font-size: 2rem;
+            background-color: blueviolet;
+            border: 3px dashed rgba(6, 245, 245, 0.95);
+            color: whitesmoke;
+            text-align: center;
+        }
+        /* ------------- Adjacent Selector -------------- */
+        /* Selects only the immediately following h3 */
+        
+        .VASHUDEVA h2+h3{
+            font-size: 1.5rem;
+            background-color: lightcoral;
+            border: 4px solid darkkhaki;
+        }
+        /* ------------- General Selector -------------- */
+        .Dashratha h2~h3{
+            font-size: 1.5rem;
+            background-color: cornsilk;
+            border: 4px solid wheat;
+        }
+
+
+    </style>
+</head>
+<body >
+    <div style="background-color: black;">
+    <hr color="red">
+    <h1>WELCOME TO THE PANDAVA'S FAMILY</h1>
+    <hr color="red">
+    </div>
+    <div class="pandavas">
+        <div class="pandu">
+            <h2>This is Yudhishthira the 1st son of Pandu </h2>
+            <h3>This is Bheem the 2st son of Pandu </h3>
+            <h3>This is Arjuna the 3st son of Pandu </h3>
+            <h3>This is Nakula the 4st son of Pandu </h3>
+            <h3>This is Sahdeva the 5st son of Pandu </h3>
+            <div>
+                <h2>Ghatotkacha is the 1st grand-child of Pandu</h2>
+                <h3 style="text-align: center;">Abhimanyu is the 2nd grand-child of Pandu</h3>
+            </div>
+        </div>
+        <hr>
+    <div style="background-color: black;">
+        <hr color="red">
+        <h1>WELCOME TO THE DASHRATHA'S FAMILY</h1>
+        <hr color="red">
+    </div>
+        <div class="Dashratha">
+            <h2> This is Rama the 1st Son of Dashratha </h2>
+            <h3> This is Bharata the 2nd Son of Dashratha </h3>
+            <h3> This is Lakshmana the 3nd Son of Dashratha </h3>
+            <h3> This is Shatrughna the 4nd Son of Dashratha </h3>
+        </div>
+    </div>
+    <hr>
+     <div style="background-color: black;">
+        <hr color="red">
+        <h1>WELCOME TO THE YADAVA'S FAMILY</h1>
+        <hr color="red">
+    </div>
+        <div class="VASHUDEVA">
+            <h2> This is Balrama the 1st Son of VASHUDEVA </h2>
+            <h3> This is Krishna the 2nd Son of VASHUDEVA </h3>
+            <h3> This is Sudhadra the Daughter of VASHUDEVA </h3>
+        </div>
+    </div>
+</body>
+</html>
