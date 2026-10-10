@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            background-color:cornsilk;
+        }
+        .main{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 30px;
+            padding-right: 100px;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 5rem;
+            color: rgb(2, 30, 30);
+            text-shadow: 8px 8px 8px;
+        }
+        h1::first-letter{
+            color: red;
+            font-size: 8rem;
+        }
+        p{
+            color:aquamarine;
+            font-size: 2rem;
+        }
+        p::first-line{
+            color: brown;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p::selection {
+            background-color: yellow;
+            color: black;
+        }
+        h1::after{ 
+            content: '✌️';
+            text-shadow: none;
+            color: red;
+            font-size: 8rem;
+        }
+        .inp-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        input{
+            border: 3px solid black;
+            padding: 20px;
+            font-size: 1.5rem;
+            border-radius: 30px;
+            background-color: aqua;
+        }
+        input::placeholder{
+            color: brown;
+            font-family: cursive;
+        }
+        li::marker{
+            text-align: center;
+            font-size: 1.5rem;
+            content: '👍';
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Kapil Sharma</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Excepturi vitae obcaecati consectetur pariatur possimus odit odio aperiam repellendus repellat doloribus facere eligendi quaerat suscipit atque ea,
+             maxime saepe veniam dicta.</p>
+    </div>
+    <br>
+    <div class="inp-1">
+        <input type="text" name="" id="" placeholder="UserName">
+        <ul>
+            <li>List Item-1</li>
+            <li>List Item-2</li>
+            <li>List-Item-3</li>
+            <li>List-Item-4</li>
+        </ul>
+    </div>
+</body>
+</html>
