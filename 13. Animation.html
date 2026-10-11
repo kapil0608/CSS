@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100%;
+            background-color: lightblue;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color:aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: spread;
+            animation-duration: 3000ms;
+            animation-delay: 500ms;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+
+        }
+        .box:hover{
+            transition: Skew(1,2);
+            animation-play-state: running;
+        }
+        .box-1{
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(25deg, aqua, magenta,green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: spread-1;
+            animation-duration: 3000ms;
+            animation-delay: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode:backwards;
+            animation-iteration-count:5;
+            animation-direction: reverse;
+            animation-play-state: paused;
+
+        }
+        .box-1:hover{
+            transition: scaleX(1.5);
+            animation-play-state: running;
+        }
+        .box-2{
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(25deg, rgb(186, 196, 196), rgb(125, 59, 125),rgb(2, 166, 2));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: spread;
+            animation-duration: 3000ms;
+            animation-delay: 500ms;
+            animation-timing-function:ease-out;
+            animation-fill-mode:both;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .box-2:hover{
+            transition: Skew(1,2);
+            animation-play-state: running;
+        }
+         .box-3{
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(25deg, lightblue, lightgreen);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: spread;
+            animation-duration: 3000ms;
+            animation-delay: 500ms;
+            animation-timing-function:cubic-bezier(0.47, 0, 0.745, 0.715);
+            animation-fill-mode:normal;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused;
+
+        }
+        .box-3:hover{
+            transition: Skew(1,2);
+            animation-play-state: running;
+        }
+
+
+        @keyframes spread{
+            from{
+                width:10%;
+            }
+            to{
+                width: 100%
+            }
+        }
+        @keyframes spread-1 {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.5);
+           }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">Kapil</div>
+        <div class="box-1">Ajay</div>
+        <div class="box-2">Sonu</div>
+        <div class="box-3">Shivansh</div>
+    </div>
+</body>
+</html>
