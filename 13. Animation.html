@@ -101,6 +101,32 @@
             animation-play-state: running;
         }
 
+        .container{
+            width: 100%;
+            height:400px;
+            background-color:cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap{
+            width: 300px;
+            height: 350px;
+            background: linear-gradient(orange,white,green);
+            border-radius: 50%;
+            animation: rotate 3000ms ease-in infinite forwards;
+            transition:  all 3000ms ease-in-out;
+        }
+         @keyframes rotate{
+            from{
+            }
+            to{
+                transform: scale(1.5);
+                transform: skew(45deg);
+            }
+        }
+        
+
 
         @keyframes spread{
             from{
@@ -127,6 +153,10 @@
         <div class="box-1">Ajay</div>
         <div class="box-2">Sonu</div>
         <div class="box-3">Shivansh</div>
+    </div>
+
+    <div class="container">
+        <div class="wrap"></div>
     </div>
 </body>
 </html>
